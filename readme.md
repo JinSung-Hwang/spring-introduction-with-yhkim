@@ -1,3 +1,12 @@
+## 프로젝트 실행
+### 프로젝트 실행 방법
+1. 소스 다운로드: git clone or git pull
+2. 프로젝트 빌드: ./gradlew build
+3. 프로젝트 실행: cd ./build/libs && java -jar xxx.jar
+
+### 프로젝트 제거후 다시 빌드시
+1. 프로젝트 빌드: ./gradlew clean build
+
 ## 사용된 라이브러리
 ### 스프링 부트 라이브러리
 - spring-boot-starter-web
