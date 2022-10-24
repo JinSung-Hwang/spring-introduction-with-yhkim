@@ -40,7 +40,12 @@ public class SpringConfig {
 
     return new MemberService(memberRepository);
   }
-  
+
+  @Bean // note: aop를 명시적으로 사용한다고 표현하기 위해서 springconfig에 작성했다.
+  public TimeTraceAop timeTraceAop() {
+    return new TimeTraceAop();
+  }
+
 //  @Bean
 //  public MemberRepository memberRepository() {
 //    return new MemoryMemberRepository();
